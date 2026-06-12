@@ -1,0 +1,71 @@
+================================================================================
+PROMPT & ANSWER LOG: 2D C GRAPHICS EDITOR
+================================================================================
+
+--------------------------------------------------------------------------------
+PROMPT 1:
+--------------------------------------------------------------------------------
+Write a 2d graphics editor in C using * and  _.
+
+Write functions to draw a circle, rectangle, line, and triangle.
+You should be able to
+      add objects to the picture,
+      delete objects from the picture, and
+       modify objects in the picture.
+Use a 2d array of characters to store the picture.
+Write a function to display the picture.
+
+Additionally, you can use the ncurses package to create menus and draw pictures.
+
+--------------------------------------------------------------------------------
+ANSWER 1:
+--------------------------------------------------------------------------------
+Created a comprehensive implementation plan detailing the architecture:
+- Data structure: Shape type enum, parameters (LineParams, RectParams, CircleParams, TriangleParams), Shape struct with unique auto-incrementing ID.
+- Algorithms: Bresenham's line drawing algorithm for lines, Midpoint Circle algorithm for circles, outline renderer for rectangles, and line connectors for triangles.
+- Canvas dimensions: 80x25 character grid using '*' for foreground and '_' for background.
+- Visual enhancement: Custom screen coordinates printed along the top and left margins (tens, units, and borders) to make coordinate plotting extremely intuitive.
+- Task management checklist.
+
+--------------------------------------------------------------------------------
+PROMPT 2:
+--------------------------------------------------------------------------------
+give the code
+
+--------------------------------------------------------------------------------
+ANSWER 2:
+--------------------------------------------------------------------------------
+Wrote the modular C codebase and build tools to the folder:
+c-graphics-editor/
+
+1. shapes.h - Declares shape parameters, structures, list boundaries, and drawing signatures.
+2. shapes.c - Implements Bresenham's line/circle drawing algorithms, outline plotting, and active shapes list management (adds, deletes, modifies).
+3. canvas.h - Defines canvas dimensions and clears/draws/displays signatures.
+4. canvas.c - Implements clearing canvas to '_', rasterizing active shapes, and printing coordinates/margins.
+5. main.c - Implements clean CLI menus, screen clearing, and safe fgets-based integer reading to prevent infinite loops.
+6. Makefile - Compiler compilation targets (gcc, C99, optimized build flags, cross-platform clean rules).
+7. walkthrough.md - Detailed user guide for compilation and execution.
+
+--------------------------------------------------------------------------------
+PROMPT 3:
+--------------------------------------------------------------------------------
+give the code that would run in online gdb and github
+
+--------------------------------------------------------------------------------
+ANSWER 3:
+--------------------------------------------------------------------------------
+Consolidated the entire modular codebase into a single, self-contained source file:
+- editor_single.c
+
+This file gathers all structures, shape management APIs, drawing algorithms, canvas renderer, and CLI menus into a single script. Users can copy-paste this file directly into OnlineGDB (onlinegdb.com) or commit it as a single source file on GitHub. Instructions for using OnlineGDB were added to walkthrough.md.
+
+--------------------------------------------------------------------------------
+PROMPT 4:
+--------------------------------------------------------------------------------
+give a file named as 'prompt.txt' with all the above prompts and their corresponding answers
+
+--------------------------------------------------------------------------------
+ANSWER 4:
+--------------------------------------------------------------------------------
+Created prompt.txt (this file) inside the project folder containing the chronological log of user prompts and their corresponding answers/solutions.
+====
