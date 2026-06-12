@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Software Engineer specializing in C graphics engines, TUI rendering, and modern web applications.">
+    <title>Adith | Software Engineer & Graphics Programmer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Animated glowing background shapes -->
+    <div class="glow-bg">
+        <div class="glow-circle glow-circle-1"></div>
+        <div class="glow-circle glow-circle-2"></div>
+        <div class="glow-circle glow-circle-3"></div>
+    </div>
+
+    <!-- Glassmorphic Navbar Header -->
+    <header>
+        <nav class="navbar glass">
+            <a href="#" class="logo">ADITH<span>.c</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#playground">Playground</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-btn">Let's Connect</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h2>// WELCOME TO MY SPACE</h2>
+                    <h1>Hi, I'm <span>Adith</span></h1>
+                    <div class="typewriter-container">
+                        <span>I specialize in</span>
+                        <span id="typewriter" class="typewriter">Graphics Engines</span>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 16px; margin-bottom: 36px; max-width: 540px;">
+                        I am a systems developer and programmer building low-level graphic renderers, text user interfaces (TUIs), and highly responsive, aesthetics-driven web applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="cta-btn">View My Work</a>
+                        <a href="#playground" class="btn-secondary">Try Sandbox</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-glow"></div>
+                    <img src="assets/hero-avatar.png" alt="Adith - Graphics Developer Avatar" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">// Core Expertise</span>
+                <h2 class="section-title">My Toolkit</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card glass">
+                    <span class="skill-icon">💾</span>
+                    <h3>C & Systems Programming</h3>
+                    <p>Low-level buffer management, pointer arithmetic, memory control, and modular application development using C99 standards.</p>
+                </div>
+                <div class="skill-card glass">
+                    <span class="skill-icon">🎨</span>
+                    <h3>Graphics Engineering</h3>
+                    <p>Implementing rasterization algorithms from scratch including Bresenham's Line, Midpoint Circle, and custom triangle matrix coordinate engines.</p>
+                </div>
+                <div class="skill-card glass">
+                    <span class="skill-icon">🌐</span>
+                    <h3>Web Applications</h3>
+                    <p>Building aesthetics-oriented, ultra-modern layouts with glassmorphic cards, core CSS structures, and interactive JS components.</p>
+                </div>
+                <div class="skill-card glass">
+                    <span class="skill-icon">📐</span>
+                    <h3>Mathematical Logic</h3>
+                    <p>Coordinate validations, symmetry plotting, grid transformations, and collision bounds calculation in terminal grids.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">// Selected Work</span>
+                <h2 class="section-title">Case Studies</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: C 2D Graphics Editor -->
+                <div class="project-card glass">
+                    <div class="project-media">
+                        <div class="project-graphic">
+  _ _ _ _ * * * _ _ _ _
+  _ _ _ * _ _ _ * _ _ _
+  _ _ * _ _ _ _ _ * _ _
+  _ _ * _ _ _ _ _ * _ _
+  _ _ _ * _ _ _ * _ _ _
+  _ _ _ _ * * * _ _ _ _
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">C Language</span>
+                            <span class="project-tag">Raster Algorithms</span>
+                            <span class="project-tag">CLI / TUI</span>
+                        </div>
+                        <h3 class="project-title">C 2D Graphics Editor</h3>
+                        <p class="project-desc">
+                            A console-based graphics program in C storing pictures in a 2D grid array. Features circle, rectangle, line, and triangle outline plotters using integer-only arithmetic. Includes complete shape lists (add, modify, delete actions) and custom coordinate framing.
+                        </p>
+                        <div class="project-links">
+                            <a href="../c-graphics-editor/" class="project-link">📂 Open Code Folder &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: JS Vector Canvas Editor -->
+                <div class="project-card glass">
+                    <div class="project-media">
+                        <div class="project-graphic" style="color: var(--neon-purple)">
+   * * * * * * * * * * *
+   * _ _ _ _ _ _ _ _ _ *
+   * _ _ _ _ * _ _ _ _ *
+   * _ _ _ * * * _ _ _ *
+   * _ _ _ _ * _ _ _ _ *
+   * _ _ _ _ _ _ _ _ _ *
+   * * * * * * * * * * *
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML Canvas</span>
+                            <span class="project-tag">Aesthetics CSS</span>
+                        </div>
+                        <h3 class="project-title">Interactive Draw Playground</h3>
+                        <p class="project-desc">
+                            A web-based visual adaptation of the C graphics engine. Created directly inside this portfolio, letting users plot pixels and run rasterizing shapes algorithms interactively via standard mouse clicks.
+                        </p>
+                        <div class="project-links">
+                            <a href="#playground" class="project-link">🎮 Run Live Application &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Canvas Playground Section -->
+    <section id="playground">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">// Sandbox Simulation</span>
+                <h2 class="section-title">Try The Graphics Editor</h2>
+            </div>
+            
+            <div class="playground-container">
+                <div class="playground-editor glass">
+                    <div class="editor-terminal-header">
+                        <div class="terminal-dots">
+                            <span class="terminal-dot dot-red"></span>
+                            <span class="terminal-dot dot-yellow"></span>
+                            <span class="terminal-dot dot-green"></span>
+                        </div>
+                        <div class="terminal-title">graphics_sandbox.c</div>
+                    </div>
+                    
+                    <div class="canvas-wrapper">
+                        <!-- Canvas grid generated via JS -->
+                        <div id="canvasGrid" class="canvas-grid"></div>
+                    </div>
+                    
+                    <div class="editor-controls">
+                        <button id="toolPixel" class="control-btn active" data-tool="pixel">Plot Pixel</button>
+                        <button id="toolLine" class="control-btn" data-tool="line">Draw Line (Bresenham)</button>
+                        <button id="toolRect" class="control-btn" data-tool="rect">Draw Rectangle</button>
+                        <button id="toolCircle" class="control-btn" data-tool="circle">Draw Circle</button>
+                        <button id="toolEraser" class="control-btn" data-tool="eraser">Eraser</button>
+                        <button id="clearBtn" class="control-btn" style="margin-left: auto; color: var(--neon-pink); border-color: rgba(255, 0, 127, 0.2);">Clear Grid</button>
+                    </div>
+                </div>
+                
+                <div class="playground-info">
+                    <h3>Draw in Realtime</h3>
+                    <p>
+                        This sandbox adapts the drawing mathematical routines implemented in the <strong>C 2D Graphics Editor</strong>. Click and drag or click endpoint coordinates to generate shapes.
+                    </p>
+                    <div class="playground-guide">
+                        <div class="guide-step">
+                            <div class="step-num">1</div>
+                            <div class="step-text">
+                                <h4>Select a drawing tool</h4>
+                                <p>Choose from standard pixel plotting, lines (using Bresenham algorithms), rectangles, or circle math.</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="step-num">2</div>
+                            <div class="step-text">
+                                <h4>Interact with the Grid</h4>
+                                <p>Click on cells. For line, rectangle, or circle, click the starting cell and then the ending cell to render.</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="step-num">3</div>
+                            <div class="step-text">
+                                <h4>See '*' and '_' In Action</h4>
+                                <p>The grids print '*' for drawn outlines and '_' for background space, exactly like the C editor canvas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">// Contact Form</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="contact-container glass">
+                <form id="contactForm" class="contact-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-input" placeholder="Hi Adith, I'd like to collaborate on..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="#" class="footer-logo">ADITH<span>.c</span></a>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#playground">Playground</a>
+            </div>
+            <p class="copyright">&copy; 2026 Adith. Built with vanilla HTML, CSS, and JS. Designed from scratch.</p>
+        </div>
+    </footer>
+
+    <!-- Glowing Success Toast Alerts -->
+    <div id="toast" class="toast">
+        <span id="toastIcon"></span>
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
